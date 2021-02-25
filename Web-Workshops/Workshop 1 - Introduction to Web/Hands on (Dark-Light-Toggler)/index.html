@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work Shop 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="top">
+      <img src="./DSC_LOGO.png" alt="logo" />
+      <button>Toggle</button>
+    </div>
+    <div class="bottom">
+      <h1>Welcome to DSC IIITL!!</h1>
+    </div>
+  </body>
+
+  <script>
+    // selecting the button in document
+    var btn = document.querySelector('#top button');
+    // adding eventListener to the button
+    btn.addEventListener('click', function () {
+      // Toggling the class "dark" to body
+      document.querySelector('body').classList.toggle('dark');
+    });
+  </script>
+</html>
